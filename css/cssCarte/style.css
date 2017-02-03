@@ -1,0 +1,660 @@
+
+/* Classe généraliste */
+
+*{
+	text-align: center;
+}
+
+#container{
+	background-image: url(../img/paternjulien.jpg);
+	background-repeat: repeat;
+}
+
+.h10pc{
+	height: 10%;
+}
+
+.h20pc{
+	height: 20%;
+}
+
+.h1-2pc{
+	height: 50%;
+}
+
+.h3-4pc{
+	height: 75%;
+}
+
+.h90pc{
+	height: 90%;
+}
+
+.h100pc{
+	height: 100%;
+}
+
+.w1-4pc{
+	width: 25%;
+}
+
+.w1-2pc{
+	width: 50%;
+}
+
+.w90pc{
+	width: 90%;
+}
+
+.w100pc{
+	width: 100%;
+}
+
+.zin1{
+	z-index: 1;
+}
+
+.zin2{
+	z-index: 2;
+}
+
+.zin4{
+	z-index: 4;
+}
+
+.zin5{
+	z-index: 5;
+}
+
+.t30p{
+	top: 30px;
+}
+
+.line100p{
+	line-height: 100px;
+}
+
+.valignm{
+	vertical-align: middle;
+}
+
+.bcksizeC{
+	background-size: cover;
+}
+
+.bstandard{
+	border: solid 1px black;
+}
+
+.bstandardtop{
+	border-top: solid 1px black;
+}
+
+/* Zone d'entête */
+
+#logosimplonmars{
+	left: 30px;
+}
+
+.emptynav{
+	line-height: 50px;
+	background-color: #2f3036;
+}
+.emptynav:hover{
+	line-height: 50px;
+	background-color: #2f3036 !important;
+}
+
+#logopromo{
+	font-family: 'albaregular';
+	right: 30px;
+	color: rgb(220, 220, 220);
+	font-size: 30px;
+}
+
+#titletrombi{
+	font-family: 'alba_superregular';
+	margin-left: 10px;
+	color: white;
+	font-size: 25px;
+}
+
+#colorheader{
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+#imageheader{
+	background-image: url(../img/Marseille_Background.jpg);
+}
+
+/* Zone de Pied de Page */
+
+#colorfooter{
+	background-color: rgba(102, 178, 255, 0.4);
+}
+
+#imagefooter{
+	background-image: url(../img/mucemfootercoupe.jpg);
+}
+
+/* Corps de page */
+
+.rotateArea{
+  	line-height: inherit;
+	border: solid 2px black;
+	border-radius: 25px;
+	transition: 2s;
+	backface-visibility: hidden;
+}
+
+.frontFace{
+	background-color: #FAF0E6;
+}
+
+.backFace{
+	color: white;
+	background-color: #2D2D30;
+	transform: rotateY(-180deg);
+}
+
+.studentArea:hover .frontFace{
+	transform: rotateY(180deg);
+}
+
+.studentArea:hover .backFace{
+	transform: rotateY(0deg);
+}
+
+/* Face Avant */
+
+.frontFace img {
+  height: 96%;
+  margin: 2% auto;
+}
+
+.frontFace h2 {
+  height: 5%;
+}
+
+.technoArea {
+  height: 15%;
+}
+
+.technoPicture {
+	width: 13%;
+	margin-left: 1%;
+}
+
+.hoverArea{
+  height: calc( 5% - 2px );
+}
+
+/* Face Arrière */
+
+.backFace img{
+	margin: 3%;
+}
+
+.backFace h2{
+	margin-top: 10%;
+}
+
+.backFace .technoPicture {
+	height: 45%;
+	width: 15%;
+	margin: 0.5% 0 0.5% 1%;
+}
+
+.writeArea{
+	height: calc( 46% - 5px );
+}
+
+/* Zone de raiseaux sociaux */
+
+.btndesign{
+	height: 42%;
+	width: 12%;
+	border-radius: 50%;
+	border: none;
+}
+
+.btndesign img{
+	border: none;
+}
+
+.btndesign:hover{
+	cursor: pointer;
+	transform: rotate(360deg) scale(1.1);
+	transition-duration: 1s;
+}
+
+/* Zone de Message perso */
+
+.writeArea p{
+	height: 95%;
+	margin: 2% 5% 0 5%;
+	text-align: left;
+	line-height: 1.5em;
+}
+
+/* Custom, iPhone Retina */
+
+@media screen and (min-width : 320px) {
+
+	.heightmin{
+		min-height: 495px;
+	}
+
+	.row{
+    	height: 495px;
+		flex-direction: column;
+    	justify-content: center;
+  		align-items: center;
+  		margin: 35px auto;
+	}
+
+  .studentArea{
+    width: 300px;
+    margin: 20px 0;
+  }
+
+  .frontFace h2 {
+		font-size: 1em;
+	}
+
+	.hoverArea{
+	    font-size: 0.7em;
+	    line-height: 1.4em;
+	}
+
+	.backFace h2{
+		width: 100%;
+		text-align: center;
+		font-size: 1.3em;
+		line-height: 1em;
+	}
+
+	#logopromo{
+		display: none;
+	}
+
+	#downto{
+		display: block;
+		position: absolute;
+		z-index: 2;
+		font-family: 'albaregular';
+		bottom: 20px;
+		vertical-align: middle;
+		line-height: 100px;
+		color: rgb(220, 220, 220);
+		font-size: 30px;
+	}
+
+	.backFace>img{
+		display: none;
+	}
+
+	.btnArea{
+		width: 100%;
+	}
+
+	.btndesign{
+		height: 100%;
+		width: 15%;
+		margin: 5% 4% 0 0;
+	}
+
+	.writeArea p{
+		font-size: 0.8em;
+		line-height: 1.2em;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+
+@media screen and (min-width : 480px) {
+
+	.heightmin{
+		min-height: 1160px;
+	}
+
+	.row{
+	    height: 495px;
+		flex-direction: column;
+	    justify-content: center;
+	  	align-items: center;
+	  	margin: 35px auto;
+	}
+
+    .studentArea{
+	    width: 300px;
+	    margin: 38px 0;
+    }
+
+    .frontFace h2 {
+		font-size: 1em;
+	}
+
+	.hoverArea{
+	    font-size: 0.7em;
+	    line-height: 1.7em;
+	}
+
+	.backFace h2{
+		font-size: 1.3em;
+		line-height: 1em;
+	}
+
+	#logopromo{
+		display: none;
+	}
+
+	#downto{
+		display: block;
+		position: absolute;
+		z-index: 2;
+		font-family: 'albaregular';
+		bottom: 20px;
+		vertical-align: middle;
+		line-height: 100px;
+		color: rgb(220, 220, 220);
+	}
+
+}
+
+/* Small Devices, Tablets */
+
+@media screen and (min-width : 768px) {
+
+	.heightmin{
+		min-height: 1448px;
+	}
+
+	.row{
+	    height: 600px;
+		flex-direction: row;
+	    justify-content: space-around;
+	  	align-items: center;
+	  	margin: 40px auto;
+	}
+
+	.studentArea{
+	  	width: 400px;
+	}
+
+    .rotateArea{
+		border-radius: 12px;
+	}
+
+    .frontFace h2 {
+		font-size: 1em;
+	}
+
+	.hoverArea{
+	    font-size: 0.7em;
+	    line-height: 1.4em;
+	}
+
+	.backFace h2{
+		font-size: 1.3em;
+		line-height: 1em;
+	}
+
+	#logopromo{
+		display: block;
+	}
+
+	#downto{
+		display: none;
+	}
+
+	.btnArea{
+		width: 75%;
+	}
+
+	.btndesign{
+		height: 75%;
+		margin: 10% 4% 0 0;
+	}
+
+}
+
+/* Medium Devices, Little Desktops */
+
+@media screen and (min-width : 992px) {
+
+	.heightmin{
+		min-height: 1672px;
+	}
+
+	.row{
+    height: 495px;
+		flex-direction: row;
+    justify-content: space-around;
+  	align-items: center;
+  	margin: 20px auto;
+	}
+
+	.rotateArea{
+		border-radius: 15px;
+	}
+
+    .studentArea{
+    	width: 300px;
+    }
+
+    .frontFace h2 {
+		font-size: 1em;
+		line-height: 1.2em;
+	}
+
+	.hoverArea{
+	    font-size: 0.8em;
+	    line-height: 1.6em;
+	}
+
+	.backFace h2{
+		width: calc( 69% - 2px );
+		text-align: left;
+		font-size: 1.2em;
+		line-height: 1.5em;
+	}
+
+	.backFace>img{
+		display: block;
+		float: left;
+	}
+
+	.btnArea{
+		width: 75%;
+	}
+
+	.btndesign{
+		display: block;
+		float: right;
+		height: 65%;
+		width: 14%;
+		margin: 3% 4% 0 0;
+		border-radius: 50%;
+		border: none;
+	}
+
+	.writeArea p{
+		font-size: 0.8em;
+		line-height: 1.2em;
+	}
+
+	#logopromo{
+		display: block;
+	}
+
+	#downto{
+		display: none;
+	}
+
+}
+
+/* Medium Devices, Little Desktops */
+
+@media screen and (min-width : 1280px) {
+
+	.heightmin{
+		min-height: 1960px;
+	}
+
+	.row{
+	    height: 619px;
+		flex-direction: row;
+	    justify-content: space-around;
+	  	align-items: center;
+	  	margin: 60px auto;
+	}
+
+	.rotateArea{
+		border-radius: 20px;
+	}
+
+	.frontFace h2 {
+		font-size: 1.2em;
+		line-height: 1.1em;
+	}
+
+	.hoverArea{
+	    font-size: 0.8em;
+	    line-height: 2.1em;
+	}
+
+	.backFace h2{
+		font-size: 1.5em;
+		line-height: 1.5em;
+	}
+
+    .studentArea{
+        width: 375px;
+    }
+
+    .btndesign{
+		height: 100%;
+		width: 15%;
+		margin: 5% 4% 0 0;
+	}
+
+	.btnArea{
+		width: 50%;
+	}
+
+	.btndesign{
+		height: 45%;
+		width: 14%;
+		margin: 7% 4% 0 0;
+	}
+
+    .writeArea p{
+		font-size: 1em;
+		line-height: 1.3em;
+	}
+
+	#logopromo{
+		display: block;
+	}
+
+	#downto{
+		display: none;
+	}
+
+}
+
+/* Large Devices, HD 1080p */
+
+@media screen and (min-width : 1920px) {
+
+	.heightmin{
+		min-height: 2600px;
+	}
+
+	.row{
+	    height: 907px;
+		flex-direction: row;
+	    justify-content: space-around;
+	  	align-items: center;
+	  	margin: 70px auto;
+	}
+
+	.studentArea{
+	    width: 550px;
+	}
+
+    .frontFace h2 {
+		font-size: 1em;
+		line-height: 1.8em;
+	}
+
+	.hoverArea{
+	    font-size: 0.8em;
+	    line-height: 3em;
+	}
+
+	.backFace h2{
+		line-height: 3.25em;
+	}
+
+	#logopromo{
+		display: block;
+	}
+
+	#downto{
+		display: none;
+	}
+
+	.btndesign{
+		height: 47%;
+		width: 14%;
+		margin: 7% 4% 0 0;
+	}
+
+}
+
+/* Extra Large Devices, 4K */
+
+@media screen and (min-width : 3840px) {
+
+	.heightmin{
+		min-height: 4520px;
+	}
+
+	.row{
+	    height: 1650px;
+		flex-direction: row;
+	    justify-content: space-around;
+	  	align-items: center;
+	  	margin: 150px auto;
+	}
+
+	.frontFace h2 {
+		font-size: 1em;
+		line-height: 1.8em;
+	}
+
+	.hoverArea{
+	    font-size: 0.8em;
+	    line-height: 3em;
+	}
+
+	.backFace h2{
+		line-height: 3.25em;
+	}
+
+   .studentArea{
+        width: 1000px;
+    }
+
+	#logopromo{
+		display: block;
+	}
+
+	#downto{
+		display: none;
+	}
+
+}
